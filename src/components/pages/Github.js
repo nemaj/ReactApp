@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Item from './Item';
 import {
   Table,
   TableBody,
@@ -18,10 +17,6 @@ const style = {
   margin: 20,
   textAlign: 'center',
   display: 'inline-block',
-};
-
-const buttonStyle = {
-  float: 'left',
 };
 
 const urlForUsername = username =>
@@ -96,7 +91,6 @@ export default class Dashboard extends Component {
 		return(
 			<div>
 				<h2>Star Wars</h2>
-				{console.log(this.state.githubData.results[0].name)}
 				<Paper style={style} zDepth={2} >
 					<Table>
 					    <TableHeader>
@@ -131,9 +125,6 @@ export default class Dashboard extends Component {
 				  modal={true}
 				  open={this.state.open}
 				>
-					{
-						console.log(this.state.eachData.birth_year)
-					}
 				  	
 					<p><b>Name: </b>{this.state.eachData.name}</p>
 					<p><b>Height: </b>{this.state.eachData.height}</p>

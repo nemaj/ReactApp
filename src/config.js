@@ -8,5 +8,6 @@ module.exports = {
 		"Dashboard": "Unang Paksa",
 		"Contacts": "Kontaks",
 	},
-	"SET_LANG": "PH_LANG"
+	"SET_LANG": "PH_LANG",
+	"baseUrl" : "https://devpartnerstraining.herokuapp.com/"
 }
